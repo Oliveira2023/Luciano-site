@@ -7,16 +7,20 @@ body{
     background-color: #9deb4465;
 }
 #img-principal {
+    display: block;
+    position: relative;
+    left: 50%;
     width: 300px;
     margin: 10px;
     border-radius: 10px;
+    transform: translate(-50%);
 }
 header{
     background-color: #9E5541;
     width: 100vw;
     padding: 10px;
 }
-header span{
+#burger{
     margin-left: 5px;
     margin-top: 5px;
     padding: 5px;
@@ -25,11 +29,21 @@ header span{
     width: 25px;
     cursor: pointer;
 }
+#lang{
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 25px;
+    margin-top: 5px;
+    padding: 5px;
+    right: 10%;
+    cursor: pointer;
+    text-align: center;
+}
 header >p{
     margin-bottom: 5px;
     font-size: 1.2em;
     padding: 8px;
-    
     display: inline-block;
     color: white;
     text-align: center;
@@ -41,8 +55,6 @@ menu{
     padding: 0px;
     margin-left: 0px;
     padding: 7px;
-    
-    
 }
 
 menu ul{
@@ -63,6 +75,9 @@ menu ul li a:hover{
     padding: 5px;
 }
 main{
-    margin: 0px 10px;
+    text-align: center;
+    margin: 0px 20px;
+    border-radius: 10px;
+    background-color: azure;
     color: #f54515;
 }
