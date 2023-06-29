@@ -11,7 +11,7 @@ body{
     position: relative;
     left: 50%;
     width: 300px;
-    margin: 10px;
+    margin: 10px 0px;
     border-radius: 10px;
     transform: translate(-50%);
 }
@@ -19,6 +19,14 @@ header{
     background-color: #9E5541;
     width: 100vw;
     padding: 10px;
+}
+header >p{
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    padding: 8px;
+    display: inline;
+    color: white;
+    text-align: center;
 }
 #burger{
     margin-left: 5px;
@@ -30,25 +38,18 @@ header{
     cursor: pointer;
 }
 #lang{
-    position: fixed;
+    position: absolute;
     background-color: black;
     color: white;
     width: 25px;
     margin-top: 5px;
     padding: 5px;
-    right: 10%;
+    right: 8%;
     cursor: pointer;
     text-align: center;
+    border-radius: 50%;
 }
-header >p{
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    padding: 8px;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    
-}
+
 menu{
     display: none;
     width: 200px;
@@ -75,9 +76,26 @@ menu ul li a:hover{
     padding: 5px;
 }
 main{
-    text-align: center;
-    margin: 0px 20px;
+    text-align: justify;
+    margin: 10px 10px;
+    padding: 10px;
     border-radius: 10px;
     background-color: azure;
     color: #f54515;
+}
+main h1{
+    text-align: center;
+}
+footer{
+    display: block;
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    color: white;
+}
+footer > P{
+    display: inline;
+    position: absolute;
+    left: 150px;
+    margin: 0px;
 }
