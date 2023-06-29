@@ -99,3 +99,6 @@ footer > P{
     left: 150px;
     margin: 0px;
 }
+footer a{
+    margin-right: 10px;
+}
