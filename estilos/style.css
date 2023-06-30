@@ -2,9 +2,17 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: yellow;
+    
 }
 body{
     background-color: #9deb4465;
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
 }
 #img-principal {
     display: block;
@@ -16,9 +24,11 @@ body{
     transform: translate(-50%);
 }
 header{
+    position: relative;
     background-color: #9E5541;
-    width: 100vw;
+    
     padding: 10px;
+    margin: -10px -10px 10px -10px;
 }
 header >p{
     margin-bottom: 5px;
@@ -34,7 +44,7 @@ header >p{
     padding: 5px;
     background-color: black;
     color: white;
-    width: 25px;
+    width: 35px;
     cursor: pointer;
 }
 #lang{
@@ -47,6 +57,7 @@ header >p{
     right: 8%;
     cursor: pointer;
     text-align: center;
+    font-size: 0.8em;
     border-radius: 50%;
 }
 
@@ -77,20 +88,21 @@ menu ul li a:hover{
 }
 main{
     text-align: justify;
-    margin: 10px 10px;
+    margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
     background-color: azure;
     color: #f54515;
+    max-width: 600px;
 }
 main h1{
     text-align: center;
 }
 footer{
-    width: 100%;
+    
     background-color: black;
     padding: 20px;
-    
+    margin: -10px;
     
 }
 footer > P{
@@ -99,15 +111,19 @@ footer > P{
     padding: 10px;
     text-align: center;
     color: white;
+    
 }
 
 footer div{
     display: flex;
     justify-content: center;
+    
     padding: 10px;
-    margin: 10px;
+    margin: 0px 10px;
     background-color: #c36950;
+    border-radius: 3px;
 }
 footer div a{
     margin: 0px 10px;
+    text-decoration: none;
 }
