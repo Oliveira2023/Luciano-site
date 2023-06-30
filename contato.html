@@ -9,8 +9,13 @@
 </head>
 <body>
     <header>
-        <menu>
-            <ul>
+        
+        <span id="burger" onclick="menuClick()" class="material-symbols-outlined">menu</span>
+        <p>Luciano Oliveira</p>
+        <span id="lang">PT</span>
+        
+        <menu id="menu-principal">
+             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="biografia.html">Biografia</a></li>
                 <li><a href="principios.html">Principios</a></li>
@@ -18,11 +23,39 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </menu>
-        <aside>
-            <div>
-                <p>Luciano Oliveira</p>
-            </div>
-        </aside>
+        
     </header>
+    <h1>Formulario de contato</h1>
+    <form action="#" method="post" autocomplete="on">
+        <div>
+            <label for="seunome">Nome</label>
+            <input type="text" id="seunome" placeholder="Digite seu nome aqui">
+        </div>
+
+        <div>
+            <label for="suaempresa">Empresa</label>
+            <input type="text" name="Empresa" id="suaempresa">
+        </div>
+
+        <div>
+            <label for="msg">Mensagem</label>
+            <input type="text" name="Mensagem" id="msg">
+        </div>
+
+        
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </div>
+    </form>
+    <footer>
+        <div>
+            <a id="github" target="_blank" href="https://github.com/Oliveira2023">Github</a>
+            <a target="_blank" href="https://www.linkedin.com/in/luciano-oliveira-87a17682/">Linkedin</a>
+        </div>
+    <p>Desenvolvido por @liveira</p>
+    <p>(11) 96359-1532</p>
+</footer>
+<script src="index.js"></script> 
 </body>
 </html>
