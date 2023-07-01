@@ -4,6 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luciano/contato</title>
+    <style>
+        body{
+            position: relative;
+            border: 2px dashed red;
+        }
+        h1{
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        footer{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 125px;
+        }
+        #campos{
+            color: white;
+        }
+        form div label{
+            font-size: 0.8em;
+        }
+        form div input{
+            position: absolute;
+            width: 150px;
+            margin-left: 25px;
+            left: 70px;
+        }
+        #limite-footer{
+            
+        display: block;
+        color: white;
+        text-align: center;
+        margin-bottom: 125px;
+        margin-top: 30px;
+        }
+        #send{
+            left: 9px;
+        }
+        .buttons{
+            width: 60px;
+            margin: 0px;
+            bor
+        }
+        
+    </style>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -27,27 +72,32 @@
     </header>
     <h1>Formulario de contato</h1>
     <form action="#" method="post" autocomplete="on">
-        <div>
-            <label for="seunome">Nome</label>
-            <input type="text" id="seunome" placeholder="Digite seu nome aqui">
-        </div>
-
-        <div>
-            <label for="suaempresa">Empresa</label>
-            <input type="text" name="Empresa" id="suaempresa">
-        </div>
-
-        <div>
-            <label for="msg">Mensagem</label>
-            <input type="text" name="Mensagem" id="msg">
-        </div>
-
+        <div id="campos">
+            <div>
+                <label for="seunome">Nome:</label>
+                <input type="text" name="nome" id="seunome" placeholder="Digite seu nome aqui">
+            </div>
+            <div>
+                <label for="suaempresa">Empresa:</label>
+                <input type="text" name="Empresa" id="suaempresa">
+            </div>
+            <div>
+                <label for="ntel">Telefone:</label>
+                <input type="tel" name="telefone" id="ntel">
+            </div>
+            <div>
         
-        <div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Cancelar">
-        </div>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        
+
+            <div><input id="send" class="buttons" type="submit" value="Enviar"></div>
+            <div><input id="cancel" class="buttons" type="reset" value="Cancelar"></div>
+
     </form>
+    <div id="limite-footer">
+        <p>Obrigado por enviar sua mensagem</p>
+    </div>
     <footer>
         <div>
             <a id="github" target="_blank" href="https://github.com/Oliveira2023">Github</a>
