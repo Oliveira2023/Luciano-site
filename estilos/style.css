@@ -19,7 +19,7 @@ body{
     display: block;
     position: relative;
     left: 50%;
-    width: 300px;
+    width: 100%;
     margin: 0px;
     border-radius: 10px;
     transform: translate(-50%);

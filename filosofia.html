@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciano/Principios</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        body{
+            background-image: url(imagens/20191116_175312.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: dashed red;
+        }
+        main{
+            margin-bottom: 10px;
+        }
+        .galeria{
+            display: flex;
+            border: 2px solid red;
+            height: 300px;
+            width: 100%;
+            margin-bottom: 120px;
+            height: 500px;
+            justify-content: center;
+            padding: 0px;
+        }
+        #face{
+            
+            align-self: flex-end;
+            width: 50%;
+            
+            
+        }
+        #penhasco{
+            
+            align-self: flex-start;
+            width: 50%;
+        }
+        #vale{
+            align-self: flex-end;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <span id="burger" onclick="menuClick()" class="material-symbols-outlined">menu</span>
+        <p>Luciano Oliveira</p>
+        <span id="lang">PT</span>
+        
+        <menu id="menu-principal">
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="filosofia.html">filosofia</a></li>
+                <li><a href="minha-historia.html">Minha História</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <p>
+            Minha conexão com o mundo é o que importa pra mim, a natureza e tudo que existe por aqui, afinal somos movidos pelo que vemos e vivemos.
+        </p>
+    </main>
+    
+        <div class="galeria">
+            <img id="face" src="imagens/rosto-geral.jpg" alt="foto de rosto">
+            <img id="penhasco" src="imagens/pexels-valdemaras-d-original.jpg" alt="penhasco">
+            <img id="vale" src="imagens/pexels-shahid-sultan-original.jpg" alt="">
+    <!--<div id="limitefooter">limite footer</div>-->
+    <footer>
+        <div>
+            <a id="github" target="_blank" href="https://github.com/Oliveira2023">Github</a>
+            <a target="_blank" href="https://www.linkedin.com/in/luciano-oliveira-87a17682/">Linkedin</a>
+        </div>
+        <p>Desenvolvido por @liveira</p>
+        <p>(11) 96359-1532</p>
+    </footer>
+    <script src="index.js"></script> 
+</body>
+</html>
