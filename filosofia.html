@@ -13,14 +13,12 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            border: dashed red;
         }
         main{
             margin-bottom: 10px;
         }
         .galeria{
             display: flex;
-            border: 2px solid red;
             height: 300px;
             width: 100%;
             margin-bottom: 120px;
@@ -28,21 +26,54 @@
             justify-content: center;
             padding: 0px;
         }
-        #face{
-            
+        .galeria input{
+            display: block;
+            height: 30px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
+            margin-top: 10px;
+            border-radius: 8px;
+            padding: 3px;
+            border: 1px groove black;
+        }
+        #baloes{
+            display: none;
+            align-self: center;
+            height: 50%;
+            width: 100%;
+            box-shadow: 3px 3px 5px rgb(0, 0, 0);
+            border-radius: 13px;
+        }
+        #rio{
+            display: none;
             align-self: flex-end;
+            margin-left: 50%;
             width: 50%;
-            
-            
+            box-shadow: 3px 3px 5px black;
+            border-radius: 13px;
         }
         #penhasco{
-            
+            display: none;
             align-self: flex-start;
+            margin-left: 50%;
             width: 50%;
+            box-shadow: 3px 3px 5px black;
+            border-radius: 13px;
         }
         #vale{
-            align-self: flex-end;
+            display: none;
+            align-self: flex-start;
+            margin-right: 50%;
             width: 50%;
+            box-shadow: 3px 3px 5px black;
+            border-radius: 13px;
+        }
+        #cassete{
+            display: none;
+            align-self: flex-end;
+            margin-right: 50%;
+            width: 50%; 
+            box-shadow: 3px 3px 5px black;
+            border-radius: 13px;
         }
     </style>
 </head>
@@ -57,7 +88,7 @@
              <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="biografia.html">Biografia</a></li>
-                <li><a href="filosofia.html">filosofia</a></li>
+                <li><a href="#">filosofia</a></li>
                 <li><a href="minha-historia.html">Minha História</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
@@ -70,9 +101,12 @@
     </main>
     
         <div class="galeria">
-            <img id="face" src="imagens/rosto-geral.jpg" alt="foto de rosto">
-            <img id="penhasco" src="imagens/pexels-valdemaras-d-original.jpg" alt="penhasco">
-            <img id="vale" src="imagens/pexels-shahid-sultan-original.jpg" alt="">
+            <input id="galeryboton" type="button" value="Balões">
+            <img id="baloes" src="imagens/baloes.jpg" alt="Baloes">
+            <img id="penhasco" src="imagens/penhasco.jpg" alt="vale">
+            <img id="rio" src="imagens/rio.jpg" alt="penhasco">
+            <img id="vale" src="imagens/vale.jpg" alt="">
+            <img id="cassete" src="imagens/cassete.jpg" alt="Cassete">
     <!--<div id="limitefooter">limite footer</div>-->
     <footer>
         <div>
