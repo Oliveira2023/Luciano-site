@@ -50,7 +50,4 @@ function btnGalery(){
 function enviar(){
     let divDoP = document.querySelector('#limite-footer')
     divDoP.firstElementChild.style.visibility = 'visible'
-    setTimeout(() => {
-        location.reload()
-    }, 1000);
 }
