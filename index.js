@@ -16,7 +16,44 @@ function menuClick(){
     }
 }
 lang.addEventListener('click', ()=>{
-    lang.innerHTML = 'EN'
+
+        lang.classList.toggle('EN')
+        if (lang.classList == 'EN'){
+
+            if(document.title == "Biografia"){
+                window.open('biography.html','_self')
+            }
+            if(document.title == "Luciano"){
+                window.open('indexEN.html','_self')
+            }
+            if(document.title == "Filosofia"){
+                window.open('philosophy.html','_self')
+            }
+            if(document.title == "Play"){
+                window.open('playEng.html','_self')
+            }
+            if(document.title == "Contato"){
+                window.open('contact.html','_self')
+            }
+        }else{
+            //lang.innerHTML = 'PT'
+            if(document.title == 'Biography'){
+            window.open('biografia.html','_self')
+            }
+            if(document.title == "Home"){
+                window.open('index.html','_self')
+            }
+            if(document.title == "Philosophy"){
+                window.open('filosofia.html','_self')
+            }
+            if(document.title == "PlayEng"){
+                window.open('play.html','_self')
+            }
+            if(document.title == "Contact"){
+                window.open('contato.html','_self')
+            }
+        }
+        
 })
 function btnGalery(){
     baloes.style.display = "block"
