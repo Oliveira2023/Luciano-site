@@ -5,25 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luciano</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/mobile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
 </head>
 <body>
     <header>
         
-        <span id="burger" onclick="menuClick()" class="material-symbols-outlined">menu</span>
-        <p>Luciano Oliveira</p>
-        <span id="lang">PT</span>
+        <span id="burguer" onclick="menuClick()" class="material-symbols-outlined">menu</span>
+        <!-- <p>Luciano Oliveira</p> -->
         
-        <menu id="menu-principal">
+        
+        <menu id="menu-links">
              <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="biografia.html">Biografia</a></li>
                 <li><a href="filosofia.html">Filosofia</a></li>
                 <li><a href="play.html">Play</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </menu>
-        
+        <span id="lang">PT</span>
     </header>
     
     <div id="divrosto">
@@ -33,10 +40,10 @@
     <main>
         <h1>Bem-vindo!</h1>
         <p>
-            Olá, esta é a minha página, nesta página eu quero te contar um pouco sobre mim.
+            Eu sou <strong> Luciano Oliveira </strong>
         </p>
         <p>
-            Este foi meu primeiro projeto como desenvolvedor Front-End, e uma pequena demonstração do que já aprendi.
+            Front-End Developer
         </p>
     </main>
     
@@ -45,8 +52,11 @@
                 <a id="github" target="_blank" href="https://github.com/Oliveira2023">Github</a>
                 <a target="_blank" href="https://www.linkedin.com/in/luciano-oliveira-87a17682/">Linkedin</a>
             </div>
-        <p>Desenvolvido por @liveira</p>
-        <p>(11) 96359-1532</p>
+            <div id="dev">
+                <p>Desenvolvido por @liveira</p>
+                <p>(11) 96359-1532</p>
+            </div>
+        
     </footer>
    <script src="index.js"></script> 
 </body>

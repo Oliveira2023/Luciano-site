@@ -1,132 +1,61 @@
-@charset "UTF-8";
+/* https://pt.wix.com/website-template/view/html/1885?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Fcriteria%3DPortf%25C3%25B3lio%2Bde%2Bdesenvolvedor%2528a%2529%2Bweb&tpClick=view_button&esi=1a0f037b-6d9d-4ec8-8aaa-ce95d6026323 */
+
+@import url("./nomalize.css");
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-html{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+#divrosto{
+    display: none;
 }
 body{
-    position: relative;
-    background-color: #3862EA;
-    min-height: 100vh;
-    width: 100%;
-    padding: 10px;
-}
-#img-principal {
-    display: block;
-    position: relative;
-    left: 50%;
-    width: 100%;
-    margin: 0px;
-    border-radius: 10px;
-    transform: translate(-50%);
-}
-header{
-    position: relative;
-    background-color: #9E5541;
-    padding: 10px;
-    margin: -10px -10px 10px -10px;
-}
-header >p{
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    padding: 8px;
-    display: inline;
-    color: white;
-    text-align: center;
-}
-#burger{
-    margin-left: 5px;
-    margin-top: 5px;
-    padding: 5px;
-    background-color: black;
-    color: white;
-    width: 35px;
-    cursor: pointer;
-}
-#lang{
-    position: absolute;
-    background-color: black;
-    color: white;
-    width: 35px;
-    margin-top: 5px;
-    padding: 5px;
-    right: 8%;
-    cursor: pointer;
-    text-align: center;
-    font-size: 0.8em;
-    border-radius: 50%;
+    background-image: url(../imagens/rosto-geral.jpg);
+    background-attachment: fixed;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #707A8A;
 }
 
-menu{
+#burguer {
     display: none;
-    width: 200px;
-    padding: 0px;
-    margin-left: 0px;
-    padding: 7px;
 }
-
-menu ul{
+header {
+    
+    background-color: darkgray;
+    
+}
+#menu-links {
+    
+    width: 60%;
+}
+#menu-links ul {
     display: flex;
-    flex-direction: column;
-    padding: 7px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    margin: auto;
 }
-menu ul li{
+#menu-links ul li {
     list-style: none;
-    padding: 5px;
 }
-menu ul li a{
+#menu-links ul li a {
     text-decoration: none;
-    color: white;
-}
-menu ul li a:hover{
-    border: 1px solid black;
-    padding: 5px;
-}
-main{
-    text-align: justify;
-    margin: 20px auto 125px auto;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(245, 255, 255);
     color: black;
-    max-width: 600px;
-    font-size: 0.9em;
+    font-size: 1.2em;
+    
 }
-main h1{
-    text-align: center;
+#menu-links ul li a:hover {
+    color: rgb(255, 0, 0);
 }
-footer{
+#lang {
+    background-color: aquamarine;
     position: absolute;
-    bottom: 0px;
-    background-color: black;
-    padding: 20px;
-    margin: 0px -10px;
-    width: 100%;
-    height: 125px;
-}
-footer > P{
-    display: block;
-    width: 100%;
-    padding: 3px;
-    text-align: center;
-    color: white;
-    
-}
-
-footer div{
-    display: flex;
-    justify-content: center;
-    
-    padding: 10px;
-    margin: 0px 10px;
-    background-color: #c36950;
-    border-radius: 3px;
-}
-footer div a{
-    margin: 0px 10px;
-    text-decoration: none;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px black solid;
 }

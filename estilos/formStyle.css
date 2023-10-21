@@ -1,0 +1,50 @@
+h1{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+#campos{
+    color: white;
+}
+form div label{
+    font-size: 0.8em;
+}
+form div input{
+    position: absolute;
+    width: 150px;
+    margin-left: 25px;
+    left: 70px;
+}
+#limite-footer{
+display: block;
+visibility: hidden;
+color: white;
+text-align: center;
+margin-bottom: 125px;
+margin-top: 30px;
+}
+#send{
+    left: 9px;
+}
+.buttons{
+    width: 60px;
+    margin: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+}
+@media screen and (min-width: 600px) {
+    form {
+        
+        
+    }
+    #campos > div{
+        position: relative;
+        width: 70%;
+        background-color: burlywood;
+        margin: auto;
+    }
+    form div input{
+        position: absolute;
+        width: 55%;
+        margin-left: 25px;
+        right: 0px;
+    }
+}
