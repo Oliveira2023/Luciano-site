@@ -11,7 +11,7 @@
     display: none;
 }
 body{
-    background-image: url(../imagens/rosto-geral.jpg);
+    
     background-attachment: fixed;
     background-position: right;
     background-size: contain;
@@ -19,43 +19,33 @@ body{
     background-color: #707A8A;
 }
 
-#burguer {
-    display: none;
-}
-header {
-    
-    background-color: darkgray;
-    
-}
-#menu-links {
-    
-    width: 60%;
-}
-#menu-links ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    margin: auto;
-}
-#menu-links ul li {
-    list-style: none;
-}
-#menu-links ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.2em;
+
+#teste{
+    background-color: yellowgreen;display: flex;
+    width: 600px;
+    align-items: center;
+    gap: 5px;
     
 }
-#menu-links ul li a:hover {
-    color: rgb(255, 0, 0);
+#div-input {
+    flex: 1;
+    background-color: #a5acb8;
 }
-#lang {
-    background-color: aquamarine;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border-radius: 50%;
-    padding: 5px;
-    border: 1px black solid;
+#div-input input {
+    
+    width: 100%;
+    outline: none!important;
+    
+}
+#div1{
+    background-color: aqua;
+    width: 40px;
+}
+#div2{
+    background-color: blue;
+    width: 40px;
+}
+#div3{
+    background-color: red;
+    width: 40px;
 }

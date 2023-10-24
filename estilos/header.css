@@ -1,0 +1,40 @@
+#burguer {
+    display: none;
+}
+header {
+    
+    background-color: darkgray;
+    
+}
+#menu-links {
+    
+    width: 60%;
+}
+#menu-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    margin: auto;
+}
+#menu-links ul li {
+    list-style: none;
+}
+#menu-links ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    
+}
+#menu-links ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+#lang {
+    background-color: aquamarine;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px black solid;
+}
