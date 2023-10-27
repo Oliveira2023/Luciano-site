@@ -6,45 +6,73 @@ h1{
     color: white;
 }
 form div label{
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 form div input{
-    position: absolute;
-    width: 150px;
-    margin-left: 25px;
-    left: 70px;
+    
+    
+    
+    
 }
 #limite-footer{
 display: block;
 visibility: hidden;
 color: white;
 text-align: center;
-margin-bottom: 125px;
+margin-bottom: 25px;
 margin-top: 30px;
 }
 #send{
     left: 9px;
 }
 .buttons{
-    width: 60px;
+    width: 70px;
     margin: 0px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
 }
 @media screen and (min-width: 768px) {
+    h1{
+        text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.616);
+        text-align: center;
+        margin: 30px;
+        color: rgb(0, 0, 0);
+    }
     form {
-        
-        
-    }
-    #campos > div{
-        position: relative;
-        width: 70%;
         background-color: rgba(169, 169, 169, 0.495);
+        border-radius: 10px;
+        width: 70%;
         margin: auto;
+        & > div{
+            
+            margin: auto;
+            
+            width: 100%;
+            padding: 5px 15px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+
+            & > label {
+                width: 15%;
+                
+            }
+            & > input {
+                min-height: 25px;
+                width: 75%;
+            }
+            & > textarea {
+                width: 75%;
+                border-radius: 0 15px 0 15px ;
+            }
+        }
+        
     }
-    form div input{
-        position: absolute;
-        width: 55%;
-        margin-left: 25px;
-        right: 0px;
+    #label-msg{
+        align-self: self-start;
+    }
+    footer{
+        background-color: black;
     }
 }

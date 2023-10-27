@@ -7,8 +7,8 @@ header {
     
 }
 #menu-links {
-    
-    width: 60%;
+    padding: 20px;
+    width: 70%;
 }
 #menu-links ul {
     display: flex;
