@@ -19,46 +19,133 @@
     <header>
         
         <span id="burguer" onclick="menuClick()" class="material-symbols-outlined">menu</span>
+        <span><img src="/favicon-32x32.png" alt=""></span>
         <menu id="menu-links">
              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="biografia.html">Biografia</a></li>
-                <li><a href="filosofia.html">Filosofia</a></li>
-                <li><a href="play.html">Play</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li><a href="#"">PROFISSIONAL</a></li>
+                <li><a href="#">EXPERIÊNCIA</a></li>
+                <li><a href="#">PORTIFÓLIO</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
             </ul>
         </menu>
         <span id="lang">PT</span>
     </header>
     
-    <div id="divrosto">
-        <img src="imagens/rosto-geral.jpg" id="img-principal" alt="foto de capa de Luciano">
-    </div>
-    
     <main>
-        <h1>Bem-vindo!</h1>
-        <p>
-            Eu sou <strong> Luciano Oliveira </strong>
-        </p>
-        <p>
-            Front-End Developer
-        </p>
+        <h1></h1>
+        <div id="apresentacao">
+            <p>
+                Eu sou <br><strong> Luciano Oliveira </strong><br>
+                <span id="dev">Front-End Developer</span>
+            </p>
+            <div id="img-rosto">
+                <img src="./imagens/rosto-geral.jpg" alt="eu">
+            </div> 
+        </div>
+        
+        
     </main>
-    <div id="teste">
-        <div id="div-input">
-            <input type="text" name="" id="">
+    <section id="sobre">
+        <div>o</div>
+        <div><p>Nascido e criado em Minas Gerais até os 18 anos, com uma infância e adolescência de cidade pequena. Aos 18 tive minha primeira experiência de cidade grande, vivi quase um ano em Campinas no interior de São Paulo, trabalhando como barman na lanchonte Conceição, onde vendia a melhor coxinha que já comi até hoje; Voltei pra casa, mas aí já senti falta dos prédios e do clima da cidade grande. Voltei!. Fui pra cidade de Americana,  e logo depois eu vim pra São Paulo, onde vivo até os dias atuais.</p>
+            
+            
+            <p>Aqui, trabalhei alguns anos em uma importadora de carrinhos de bebê por 3 anos, e depois outros 17 na Multfoco, uma importadora de produtos para ótica, onde cresci e me especializei profissionalmente como técnico, na manutenção dos equipamentos. Trabalhei outros 5 anos no ramo de ótica como representante de tecnologia em produção de lentes e venda de lentes. Me especializei em eletrônica aos 27 anos. Aos 37, queria fazer uma faculdade na área de TI, mas após 6 meses desisti, vendo que a graduação não me traria conhecimentos suficientes para ingressar em uma nova profissão como era desejado. Então segui a vida, com meu trabalho, muitas viagens por todo país e algumas pra Espanha.</p>
+            
+            
+            <p>Aos 47 as coisas mudaram um pouco, e agora escrevendo este artigo, percebi que minha vida vai em ciclos de 10 em 10 anos que muda alguma coisa...agora determinado a seguir uma nova carreira, mas, confesso que tive muita dificuldade no inicio, essa área é um oceano de informações que é impossível aprender de tudo, me dei conta disso e parei de querer saber tudo, precisaria muitas vidas e não sei se um ser humano seria capaz.</p>
+            
+            
+            <p>Então desde meados de 2022, iniciei minha formação em engenharia de software e outros cursos relacionados a desenvolvimento Front End.</p>
+            
+            
+            <p>Bom isso foi um pouco e resumido da história da minha vida. Obrigado pela atenção.</p>
         </div>
-        <div id="div1">
-            <p>div1</p>
+        <div><button>DOWNLOAD CURRÍCULO</button></div>
+        
+    </section>
+    <section id="habilidades">
+        <h1>PROFISSIONAL</h1>
+        <P>Meu conhecimento em softwares</P>
+        <div class="tec">
+            <p>HTML</p>
+            <div class="barra">
+                <div id="html-tec"></div>
+                <p>85%</p>
+            </div>
         </div>
-        <div id="div2">
-            <p>div2</p>
+        <div class="tec">
+            <p>CSS</p>
+            <div class="barra">
+                <div id="css-tec"></div>
+                <p>75%</p>
+            </div>
         </div>
-        <div id="div3">
-            <p>div3</p>
+
+        <div class="tec">
+            <p>JavaScript</p>
+            <div class="barra">
+                <div id="js-tec"></div>
+                <p>65%</p>
+            </div>
         </div>
-    </div>
-    
+
+        <div class="tec">
+            <p>MySQL</p>
+            <div class="barra">
+                <div id="mysql-tec"></div>
+                <p>35%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p>React</p>
+            <div class="barra">
+                <div id="react-tec"></div>
+                <p>15%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p>Node</p>
+            <div class="barra">
+                <div id="node-tec"></div>
+                <p>10%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p>PHP</p>
+            <div class="barra">
+                <div id="php-tec"></div>
+                <p>5%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p>Python</p>
+            <div class="barra">
+                <div id="python-tec"></div>
+                <p>5%</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="experiencia">
+        <h1>EXPERIÊNCIA</h1>
+        <div id="svg-line">
+            <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 200 200" role="presentation" aria-hidden="true">
+                <g>
+                    <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
+                </g>
+            </svg>
+            <div id="comp-iqqj6loz" class="comp-iqqj6loz aVng1S wixui-horizontal-line" style="visibility: inherit;" data-angle="90" data-angle-style-location="style" data-screen-in-hide="done"></div>
+        </div>
+        <div class="experience-row">
+            <div></div>
+        </div>
+    </section>
     <footer>
             <div>
                 <a id="github" target="_blank" href="https://github.com/Oliveira2023">Github</a>

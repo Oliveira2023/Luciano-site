@@ -1,51 +1,164 @@
 /* https://pt.wix.com/website-template/view/html/1885?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Fcriteria%3DPortf%25C3%25B3lio%2Bde%2Bdesenvolvedor%2528a%2529%2Bweb&tpClick=view_button&esi=1a0f037b-6d9d-4ec8-8aaa-ce95d6026323 */
 
 @import url("./nomalize.css");
+@font-face {
+    font-family: "Leckerli";
+    src: url("./fonts/LeckerliOne-Regular.ttf");
+}
+@font-face {
+    font-family: "one";
+    src: url(../Fonts/LeckerliOne-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-#divrosto{
-    display: none;
-}
+
 body{
+    background-color: #707a8a;
     
-    background-attachment: fixed;
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #707A8A;
 }
-
-
-#teste{
-    background-color: yellowgreen;display: flex;
-    width: 600px;
+main{
+    min-height: 70vh;
+    
+    padding: 45px 25px;
+    color: white;
+    & p{
+        font-family: "Leckerli";
+      margin-left: 5%;
+      font-size: 3rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 3px rgba(31, 23, 23, 0.381);
+    }
+}
+#apresentacao{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 5px;
+    & #dev{
+        font-size: 0.5em;
+        color: rgba(255, 255, 255, 0.678);
+    }
+}
+#img-rosto{
+    width: 200px;
+}
+#img-rosto img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #a5acb8;
+}
+#sobre {
+    display: flex;
+    flex-direction: column;
+    background-color: #333B50;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    & div:first-child{
+        font-family: "one";
+        color: white;
+        font-size: 4em;
+        font-weight: 400;
+    }
+    & div:nth-child(2){
+        font-family: "one";
+        font-size: 15px;
+        padding: 25px;
+        text-align: justify;
+        
+    }
+    & div:last-child {
+        font-size: 0.5em;
+        margin: 10px;
+    }
     
+    font-size: 2em;
+    color: white;
 }
-#div-input {
-    flex: 1;
-    background-color: #a5acb8;
+#habilidades {
+    text-align: center;
+    color: white;
+    margin-top: 165px;
+    & h1 {
+        font-size: 3em;
+    }
+    & > p {
+        font-size: 1.5em;
+    }
 }
-#div-input input {
+.tec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    & p {
+        width: 85px;
+        text-align: right;
+    }
+    margin: 25px;
+
+}
+.barra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 600px;
+    height: 15px;
+    gap: 15px;
+}
+.barra > div{
+    background-color: #00D646;
+    height: 12px;
+    border-radius: 2px;
+}
+#html-tec {
+    width: 85%;
+}
+#css-tec {
+    width: 75%;
+}
+#js-tec {
+    width: 65%;
+}
+#react-tec {
+    width: 15%;
+}
+#node-tec {
+    width: 10%;
+}
+#mysql-tec {
+    width: 35%;
+}
+#sql-tec {
+    width: 10%;
+}
+#php-tec {
+    width: 5%;
+}
+#python-tec {
+    width: 5%;
+}
+#experiencia {
+    margin: auto;
+    background-color: rgb(141, 224, 224);
+    padding: 15px;
+}
+#svg-line {
+    text-align: center;
+}
+svg{
     
-    width: 100%;
-    outline: none!important;
     
+    margin: 10px;
+    fill: #00D646;
 }
-#div1{
-    background-color: aqua;
-    width: 40px;
-}
-#div2{
-    background-color: blue;
-    width: 40px;
-}
-#div3{
-    background-color: red;
-    width: 40px;
+#comp-iqqj6loz {
+    width: 5px;
+    background-color: #00D646;
+    height: 130px;
 }
