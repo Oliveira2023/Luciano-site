@@ -21,19 +21,19 @@ lang.addEventListener('click', ()=>{
         if (lang.classList == 'EN'){
 
             if(document.title == "Biografia"){
-                window.open('biography.html','_self')
+                window.open('#','_self')
             }
             if(document.title == "Luciano"){
-                window.open('indexEN.html','_self')
+                window.open('#','_self')
             }
             if(document.title == "Filosofia"){
-                window.open('philosophy.html','_self')
+                window.open('#','_self')
             }
             if(document.title == "Play"){
-                window.open('playEng.html','_self')
+                window.open('#','_self')
             }
             if(document.title == "Contato"){
-                window.open('contact.html','_self')
+                window.open('#','_self')
             }
         }else{
             //lang.innerHTML = 'PT'

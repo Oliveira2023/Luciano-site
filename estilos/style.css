@@ -9,6 +9,17 @@
     font-family: "one";
     src: url(../Fonts/LeckerliOne-Regular.ttf);
 }
+@font-face {
+    font-family: "wix-display";
+    src: url(../Fonts/Wix_Madefor_Display/);
+}
+:root{
+    --cor-principal: #a5acb8;
+    --cor-fundo-escuro: #333B50;
+    --cor-fundo: #707a8a;
+    --cor-texto: white;
+    --cor-verde: #00D646;
+}
 *{
     margin: 0;
     padding: 0;
@@ -18,23 +29,23 @@
 
 body{
     background-color: #707a8a;
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagens/pequena.jpg);
+    background-position: center;
+    background-size: cover;
 }
 main{
     min-height: 70vh;
-    
     padding: 45px 25px;
     color: white;
     & p{
         font-family: "Leckerli";
-      margin-left: 5%;
-      font-size: 3rem;
-      font-weight: 600;
-      text-shadow: 2px 2px 3px rgba(31, 23, 23, 0.381);
+        margin-left: 5%;
+        font-size: 3rem;
+        font-weight: 600;
+        text-shadow: 2px 2px 3px rgba(31, 23, 23, 0.381);
     }
 }
 #apresentacao{
-    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -55,37 +66,62 @@ main{
 #sobre {
     display: flex;
     flex-direction: column;
-    background-color: #333B50;
-    width: 80%;
+    background-color: #333b50e1;
+    width: 70%;
     margin: auto;
     text-align: center;
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    #sobre-span{
+        color: #00D646;
+    }
     & div:first-child{
         font-family: "one";
         color: white;
-        font-size: 4em;
+        font-size: 0.5em;
         font-weight: 400;
+
     }
     & div:nth-child(2){
-        font-family: "one";
+        font-family: "wix-display";
         font-size: 15px;
         padding: 25px;
         text-align: justify;
-        
+        width: 80%;
+        margin: auto;
+        line-height: 30px;
     }
     & div:last-child {
         font-size: 0.5em;
-        margin: 10px;
+        padding: 5px;
+        /* color: white; */
+        & button {
+            background-color: var(--cor-fundo-escuro);
+            border: 1px solid #00D646;
+            color: white;
+            padding: 15px 30px;
+            margin: 50px 0;
+            /* font-size: 0.5em; */
+            &:hover {
+                background-color: #00D646;
+            }
+            
+        }
     }
-    
-    font-size: 2em;
-    color: white;
 }
+
 #habilidades {
+    /* background-color: #333b50a4; */
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     text-align: center;
     color: white;
-    margin-top: 165px;
+    /* margin-top: 165px; */
     & h1 {
         font-size: 3em;
+        padding: 30px;
     }
     & > p {
         font-size: 1.5em;
@@ -95,7 +131,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     & p {
         width: 85px;
         text-align: right;
@@ -110,6 +146,9 @@ main{
     width: 600px;
     height: 15px;
     gap: 15px;
+    & p {
+        width: 35px;
+    }
 }
 .barra > div{
     background-color: #00D646;
@@ -121,6 +160,7 @@ main{
 }
 #css-tec {
     width: 75%;
+    
 }
 #js-tec {
     width: 65%;
@@ -148,8 +188,17 @@ main{
     flex-direction: column;
     align-items: center;
     color: white;
-    
+    & h1 {
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     /* padding: 15px; */
+}
+.exp-hist {
+    width: 300px;
+    margin: 0 15px;
 }
 .svg-ball {
     margin-bottom: -0px;
@@ -201,4 +250,87 @@ main{
     text-align: left;
     margin-left: 55px;
     
+}
+#docontato {
+    background-color: #333B50;
+    width: 80%;
+    margin: auto;
+    color: white;
+    margin: 20px auto;
+}
+#contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 300px;
+    text-align: left;
+    
+    > div {
+        width: 50%;    
+        padding: 15px;
+        & p {
+            font-family: "wix-display";
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+        }
+        & h2 {
+            width: 60%;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            font-weight: 200;
+            margin: 0 auto 25px auto;
+            padding: 10px;
+        }
+    }
+    & form {
+        width: 50%;
+        padding: 15px;
+        
+        & div {
+            padding: 10px;
+        }
+        & input {
+            /* height: 35px; */
+            padding: 5px;
+            width: 70%;
+            
+        }
+    }
+}
+#redes {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    & a {
+        text-decoration: none;
+        margin: 0 15px;
+        & img {
+            width: 30px;
+        }
+    }
+    & div {
+        font-size: xx-small;
+        margin-top: 10px;
+        & a {
+            color: white;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    background-color: #333B50;
+    color: white;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: 100px;
+    > div {
+        width: 30%;
+        text-align: center;
+        margin: 20px;
+
+    }
+
 }

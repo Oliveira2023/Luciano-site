@@ -1,4 +1,11 @@
 video para fazer scroll:
     https://www.youtube.com/watch?v=CldkblcJJTw&t=12s
+    pode clicar também pelo id no href
 
+    mostrar no menu em qual parte está da navegação
+    scroll-behavior: smooth; // para fazer o scroll lentamente
+      @media (prefers-reduced-motion: no-preference) { // faz parte para acessibilidade
+   * { scroll-behavior: smooth;
+  }
+}
     
