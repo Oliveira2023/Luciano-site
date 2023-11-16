@@ -7,6 +7,66 @@ let rio = document.querySelector('#rio')
 let cassete = document.querySelector('#cassete')
 let btnSend = document.querySelector('#send')
 
+let options= {
+    root: null,
+    rootMargin: '0px',
+    threshold: .5,
+}
+
+let observer = new IntersectionObserver(callback, options)
+
+// let target = document.querySelector('#habilidades')
+// observer.observe(target)
+
+let target = document.querySelectorAll('.barra')
+// let target = document.querySelectorAll('.tec') 
+target.forEach(element => {
+    observer.observe(element)
+})
+
+function callback(entries){
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.classList.add('show')
+            if (entry.isIntersecting) observer.unobserve(entry.target)
+        }else{
+            entry.target.classList.remove('show')
+        }
+    })
+}
+let options2 = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0,
+}
+// let alvo = document.querySelector('#experiencia')
+// let target3 = document.querySelectorAll('.comp-iqqj6loz')
+
+let alvo = document.querySelectorAll('.comp-iqqj6loz')
+
+let observer2 = new IntersectionObserver(callback2, options2)
+alvo.forEach(element => {
+    observer2.observe(element)
+})
+// observer2.observe(alvo)
+
+
+function callback2(entries){
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.classList.add('line-efect')
+            // target3.forEach(element => {
+            //     element.classList.add('line-efect')
+                if (entry.isIntersecting) observer2.unobserve(entry.target)
+            // });
+        }else{
+            // entry.target.classList.remove('')
+            // target3.forEach(element => {
+                // element.classList.remove('line-efect')
+            // })
+        }
+    })
+}
 
 function menuClick(){
     if (menuEl.style.display == "block"){
@@ -88,3 +148,4 @@ function enviar(){
     let divDoP = document.querySelector('#limite-footer')
     divDoP.firstElementChild.style.visibility = 'visible'
 }
+
