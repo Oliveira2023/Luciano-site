@@ -6,6 +6,11 @@ let vale = document.querySelector('#vale')
 let rio = document.querySelector('#rio')
 let cassete = document.querySelector('#cassete')
 let btnSend = document.querySelector('#send')
+let js = document.getElementById('js')
+
+window.onload = ()=>{
+    js.innerHTML = 'JS'
+}
 
 let options= {
     root: null,

@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px) {
+    body{
+        
+    }
+    #burguer {
+        display: block;
+        background-color: white;
+    }
+    #menu-links ul {
+        /* display: none; */
+        display: flex;
+        /* flex-direction: column; */
+    }
+    #apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        & p {
+            text-align: center;
+        }
+    }
+    #sobre {
+        width: 95%;
+        padding: 2px;
+        & div:nth-child(2){
+            padding: 5px;
+            width: 90%;
+        }
+    }
+    #habilidades {
+        margin: auto;
+        width: 95%;
+        & h1 {
+            width: 50%;
+        }
+    }
+    .tec {
+        margin: 25px 0;
+        & P {
+            width: 55px;
+        }
+    }
+    .barra {
+        width: 75%;
+    }
+    .exp-hist {
+        
+        background-color: rgb(93, 93, 47);
+    }
+}

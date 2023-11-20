@@ -80,7 +80,7 @@ main{
         color: #00D646;
     }
     & div:first-child{
-        font-family: "one";
+        /* font-family: "one"; */
         color: white;
         font-size: 0.5em;
         font-weight: 400;
