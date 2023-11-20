@@ -6,11 +6,16 @@ let vale = document.querySelector('#vale')
 let rio = document.querySelector('#rio')
 let cassete = document.querySelector('#cassete')
 let btnSend = document.querySelector('#send')
-let js = document.getElementById('js')
 
-window.onload = ()=>{
-    js.innerHTML = 'JS'
-}
+const menu = document.querySelector('#menu-mobile')
+let menuli = document.querySelectorAll('.menuli')
+const body = document.querySelector('body')
+
+menuli.forEach(element => {
+    element.addEventListener('click', () => {
+        menu.style.display = "none"
+    })
+})
 
 let options= {
     root: null,
@@ -74,10 +79,14 @@ function callback2(entries){
 }
 
 function menuClick(){
-    if (menuEl.style.display == "block"){
-        menuEl.style.display = "none"
+
+    // menuEl.classList.toggle('active')
+    if (menu.style.display == "flex"){
+        menu.style.display = "none"
     }else{
-        menuEl.style.display = "block"
+        menu.style.display = "flex"
+        // body.classList.toggle('blurred')
+        // menu.classList.toggle('blurred')
     }
 }
 lang.addEventListener('click', ()=>{

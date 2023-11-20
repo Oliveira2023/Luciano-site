@@ -1,10 +1,10 @@
 /* https://pt.wix.com/website-template/view/html/1885?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Fcriteria%3DPortf%25C3%25B3lio%2Bde%2Bdesenvolvedor%2528a%2529%2Bweb&tpClick=view_button&esi=1a0f037b-6d9d-4ec8-8aaa-ce95d6026323 */
 
 @import url("./nomalize.css");
-@font-face {
+/* @font-face {
     font-family: "Leckerli";
-    src: url("./fonts/LeckerliOne-Regular.ttf");
-}
+    src: url("../Fonts/LeckerliOne-Regular.ttf");
+} */
 @font-face {
     font-family: "one";
     src: url(../Fonts/LeckerliOne-Regular.ttf);
@@ -75,16 +75,13 @@ main{
     font-size: 2em;
     color: white;
     padding: 10px;
-    
     #sobre-span{
         color: #00D646;
     }
     & div:first-child{
-        /* font-family: "one"; */
         color: white;
         font-size: 0.5em;
         font-weight: 400;
-
     }
     & div:nth-child(2){
         font-family: serif;
@@ -95,20 +92,18 @@ main{
         margin: auto;
         line-height: 30px;
         & p {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'wix-display', serif;
         }
     }
     & div:last-child {
         font-size: 0.5em;
         padding: 5px;
-        /* color: white; */
         & button {
             background-color: var(--cor-fundo-escuro);
             border: 1px solid #00D646;
             color: white;
             padding: 15px 30px;
             margin: 50px 0;
-            /* font-size: 0.5em; */
             &:hover {
                 background-color: #00D646;
             }
@@ -209,11 +204,13 @@ main{
         flex-direction: row;
         justify-content: space-between;
         padding: 30px 0 30px 0;
+        & span {
+            text-align: center;
+        }
     }
-    /* padding: 15px; */
 }
 .exp-hist {
-    width: 300px;
+    width: 50%;
     margin: 0 15px;
 }
 .svg-ball {
@@ -225,7 +222,6 @@ main{
     width: 5px;
 }
 .line-efect {
-    
     margin-top: 0;
     width: 5px;
     background-color: #00D646;
@@ -246,6 +242,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     align-items: flex-start;
     margin: 0px
     
@@ -257,6 +254,9 @@ main{
     color: #00D646;
     font-size: 0.9em;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     & li {
         color: white;
         list-style: none;
@@ -264,7 +264,7 @@ main{
         & a {
             color: white;
             text-decoration: none;
-            font-family: 'Times New Roman', Times, serif;
+            /* font-family: 'Times New Roman', Times, serif; */
             &:hover {
                 background-color: rgba(60, 58, 58, 0.493);
                 border-radius: 5px;
@@ -276,13 +276,12 @@ main{
 .time-refL {
     text-align: right;
     margin-right: 55px;
-    
 }
 .time-refR {
     text-align: left;
     margin-left: 55px;
     & li {
-        font-family: 'Times New Roman', Times, serif;
+        /* font-family: 'Times New Roman', Times, serif; */
     }
 }
 .projects {
@@ -323,7 +322,6 @@ main{
     & form {
         width: 50%;
         padding: 15px;
-        
         & div {
             padding: 10px;
         }

@@ -18,15 +18,15 @@
 <body id="body">
     <header>
         
-        <span id="burguer" onclick="menuClick()" class="material-symbols-outlined">...</span>
-        <span><img src="/favicon-32x32.png" alt=""></span>
+        <span id="burguer" onclick="menuClick()" class="material-symbols-outlined">menu</span>
+        <span><img src="/favicon-32x32.png" alt="logo do desenvolvedor"></span>
         <menu id="menu-links">
-             <ul>
-                <li id="home"><a href="#body">Home</a></li>
-                <li><a href="#habilidades">PROFISSIONAL</a></li>
-                <li><a href="#experiencia">EXPERIÊNCIAS</a></li>
+             <ul id="menu-mobile">
+                <li class="menuli" id="home"><a href="#body">Home</a></li>
+                <li class="menuli"><a href="#habilidades">PROFISSIONAL</a></li>
+                <li class="menuli"><a href="#experiencia">EXPERIÊNCIAS</a></li>
                 <!-- <li><a href="#">PORTIFÓLIO</a></li> -->
-                <li><a href="#contato">CONTATO</a></li>
+                <li class="menuli"><a href="#contato">CONTATO</a></li>
             </ul>
         </menu>
         <span id="lang">PT</span>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="tec">
-            <p id="js">JavaScript</p>
+            <p id="js">JS</p>
             <div class="barra">
                 <div id="js-tec"></div>
                 <p>65%</p>
@@ -133,7 +133,7 @@
 
     </section>
     <section id="experiencia">
-        <h1><span class="exp-hist">EXPERIÊNCIAS</span><span class="exp-hist" style="padding-left: 45px;">CRONOLOGIA</span></h1>
+        <h1><span class="exp-hist">EXPERIÊNCIAS</span><span class="exp-hist" >CRONOLOGIA</span></h1>
         <div class="timeline">
             <div class="time-refL">
                 <p>Projetos concluídos</p>
@@ -147,18 +147,18 @@
         </div>
         <div class="timeline">
             <ul class="time-refL projects">
-                <br>
+
                 <li><a href="https://vgr-veiculos.web.app/" target="_blank">*VGR veiculos</a></li>
                 <li><a href="https://github.com/Oliveira2023/Saboroso" target="_blank">Saboroso</a></li>
-                <li><a href="https://oliveira2023.github.io/formFreeCodeCamp/" target="_blank">Formulario FreeCodeCamp</a></li>
+                <li><a id="freeCodeCamp-form" href="https://oliveira2023.github.io/formFreeCodeCamp/" target="_blank">Formulario FreeCodeCamp</a></li>
                 <li><a href="https://oliveira2023.github.io/landing-page/" target="_blank">*Luciano Page</a></li>
             </ul>
             <div id="comp-iqqj6loz" class="comp-iqqj6loz aVng1S wixui-horizontal-line" style="visibility: inherit;" data-angle="90" data-angle-style-location="style" data-screen-in-hide="done"></div>
             <ul class="time-refR cronologia">
                 <br>
                 <li>3º semestre da faculdade</li>
-                <li>Inicio aprendizado React - <a href="">CFB cursos</a></li>
-                <li>Conclusão curso JavaScript Hcode</li>
+                <li id="react-cfb">Inicio React - <a href="">CFB</a></li>
+                <li id="js-hcode">Conclusão JavaScript -<a href="">Hcode</a></li>
             </ul>
         </div>
         <div class="timeline">
@@ -174,7 +174,7 @@
         </div>
         <div class="timeline">
             <ul class="time-refL projects">
-                <br>
+                
                 <li><a href="https://github.com/Oliveira2023/NetBeansProjects/tree/main/ProjetoRobo3" target="_blank">Robo-java</a></li>
                 <li><a href="https://oliveira2023.github.io/Projeto-Cordel/" target="_blank">Cordel</a></li>
                 <li><a href="https://github.com/Oliveira2023/Hcode-projeto-usuarios" target="_blank">Projeto usuários</a></li>
@@ -203,17 +203,18 @@
         </div>
         <div class="timeline">
             <ul class="time-refL projects">
-                <br>
-                <li><a href="https://github.com/Oliveira2023/Primeiros-passos" target="_blank">Primeiros passos na programação</a></li>
+                
+                <li><a href="https://github.com/Oliveira2023/Primeiros-passos" target="_blank">Primeiros passos</a></li>
                 <li><a href="https://github.com/Oliveira2023/Hcode-projeto-usuarios" target="_blank">Projeto Usuários</a></li>
+                <li><a href="" target="_blank">Calculadora JS</a></li>
             </ul>
             <div id="comp-iqqj6loz" class="comp-iqqj6loz aVng1S wixui-horizontal-line" style="visibility: inherit;" data-angle="90" data-angle-style-location="style" data-screen-in-hide="done"></div>
             <ul class="time-refR cronologia">
                 <br>
                 <li>Inicio da Engenharia de Software</li>
-                <li>Inicio curso Html-CSS - curso em video</li>
-                <li>inicio curso JavaScript - Hcode</li>
-                <li>Certificação JavaScript - FreeCodeCamp</li>
+                <li>Html-CSS - curso em video</li>
+                <li>inicio curso JavaScript - <a href="">Hcode</a></li>
+                <li>Certificação JS - <a href="">FCC</a></li>
             </ul>
         </div>
         <div class="timeline">
@@ -229,14 +230,15 @@
         </div>
         <div class="timeline">
             <ul class="time-refL projects">
-                <br>
+                
                 <li>Ótica própria</li>
                 <li>Business Developer -Brasil</li>
-                <li>Supervisor de assistência técnica</li>
-                <li>Tecnico de manutenção de equipamentos</li>
+                <li>Supervisor de assist. técnica</li>
+                <li>Tecnico de manutenção</li>
                 <li>Conhecimento de todo processo de produção de lentes oftálmicas</li>
             </ul>
             <div id="comp-iqqj6loz" class="comp-iqqj6loz aVng1S wixui-horizontal-line" style="visibility: inherit;" data-angle="90" data-angle-style-location="style" data-screen-in-hide="done"></div>
+
             <ul class="time-refR cronologia">
                 <br>
                 <li>21 anos de experiência no ramo ótico</li>
@@ -280,6 +282,10 @@
                 <div>
                 <textarea rows="6" placeholder="Digite aqui sua mensagem"></textarea>
                 </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+                
             </form>
         </div>
         <div id="redes">

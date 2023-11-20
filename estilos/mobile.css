@@ -1,15 +1,45 @@
 @media screen and (max-width: 600px) {
     body{
-        
+        font-family: Arial, Helvetica, sans-serif;
+        /* width: 90vw; */
+        ;
+    }
+    header {
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 5px;
+        /* min-height: 45px; */
+        height: auto;
+        & span>img {
+            display: none;
+        }
     }
     #burguer {
         display: block;
-        background-color: white;
+        color: white;
+        width: 35px;
+        margin: 0;
+        padding: 5px;
     }
-    #menu-links ul {
-        /* display: none; */
-        display: flex;
-        /* flex-direction: column; */
+    .blurred {
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        background-color: #eee;
+    }
+    #menu-links {
+        flex: 1;
+    }
+    #menu-mobile{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: endstart;
+        /* position: absolute; */
+        top: 45px;
+        left: 8px;        
     }
     #apresentacao {
         display: flex;
@@ -22,16 +52,31 @@
     #sobre {
         width: 95%;
         padding: 2px;
+        background-color: #333b508a;
         & div:nth-child(2){
             padding: 5px;
             width: 90%;
         }
     }
     #habilidades {
-        margin: auto;
+        /* background-color: antiquewhite; */
         width: 95%;
+        margin: auto;
         & h1 {
-            width: 50%;
+            font-size: 1.5em;
+        }
+        
+    }
+    #experiencia {
+        width: 95%;
+        /* background-color: antiquewhite; */
+        /* align-items: center; */
+        margin: auto;
+        & h1 {
+            width: 100%;
+            font-size: 1.5em;
+            & span {
+           }
         }
     }
     .tec {
@@ -42,9 +87,81 @@
     }
     .barra {
         width: 75%;
+        /* gap: 5px; */
     }
     .exp-hist {
+        font-size: .6em;
+        width: 50%;
+        /* background-color: rgb(93, 93, 47); */
+    }
+    .time-refL, .time-refR {
+        /* background-color: aqua; */
+        width: 50%;
+        font-size: 0.8em;
+        & li {
+            line-height: 20px;
+        }
+    }
+    .time-refL {
+        margin-right: 15px;
+        /* background-color: rgb(93, 93, 47); */
+        & p {
+            /* background-color: aquamarine; */
+            
+        }
+    }
+    .timeline {
+        width: 99%;
+    }
+    .time-refR {
+        margin-left: 15px;
+    }
+    .line-efect {
         
-        background-color: rgb(93, 93, 47);
+    }
+    footer {
+        > div {
+            margin: 0px;
+            flex: 1;
+        }
+        #dev {
+            flex: 3;
+        }
+    
+    }
+    #docontato {
+        background-color: #333b509e;
+        width: 95%;
+        & div {
+            padding: 0;
+            & p {
+                width: 100%;
+            }
+        }
+        & form {
+            padding: 0;
+            
+            & div {
+                padding: 5px;
+                >input {
+                    width: 100%;
+                }
+                & button {
+                    float: right;
+                    color: red;
+                }
+            }
+            & div>textarea {
+                width: 100%;
+
+            } 
+        }
+    }
+    #contato {
+        & div>h2 {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto 10px auto;
+        }
     }
 }
