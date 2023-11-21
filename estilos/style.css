@@ -220,12 +220,13 @@ main{
 }
 .comp-iqqj6loz{
     width: 5px;
+    height: 160px;
 }
 .line-efect {
     margin-top: 0;
     width: 5px;
     background-color: #00D646;
-    height: 160px;
+    /* height: 160px; */
     animation-name: line-grow;
     animation-duration: 3.5s;
     animation-iteration-count: 1;
@@ -242,12 +243,11 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     align-items: flex-start;
     margin: 0px
-    
-
-    
+}
+.timeball {
+    align-items: center;
 }
 .time-refL, .time-refR {
     width: 300px;
@@ -281,7 +281,7 @@ main{
     text-align: left;
     margin-left: 55px;
     & li {
-        /* font-family: 'Times New Roman', Times, serif; */
+
     }
 }
 .projects {
@@ -300,15 +300,16 @@ main{
     justify-content: space-between;
     min-height: 300px;
     text-align: left;
-    padding: 30px 0 30px 0;
+    /* padding: 30px 0 0px 0; */
     > div {
         width: 50%;    
         padding: 15px;
         & p {
             font-family: 'Times New Roman', Times, serif;
-            width: 60%;
+            width: 75%;
             margin: auto;
             padding: 10px;
+            text-align: justify;
         }
         & h2 {
             width: 60%;
@@ -321,20 +322,26 @@ main{
     }
     & form {
         width: 50%;
-        padding: 15px;
+        padding-top: 20px;
         & div {
-            padding: 10px;
+            padding: 10px 5px;
+            /* margin-top: 10px; */
         }
         & input {
-            /* height: 35px; */
+            height: 30px;
             padding: 5px;
-            width: 70%;
+            width: 100%;
             
         }
         & textarea {
-            width: 70%;
+            width: 100%;
+            padding: 5px;
         }
     }
+}
+#email {
+    text-align: center;
+    margin-bottom: 15px;
 }
 #redes {
     text-align: center;

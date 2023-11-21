@@ -161,7 +161,10 @@
         & div>h2 {
             width: 100%;
             text-align: center;
-            margin: 0 auto 10px auto;
+            margin: 0 auto;
+        }
+        & div>p {
+            padding: 8px;
         }
     }
 }
