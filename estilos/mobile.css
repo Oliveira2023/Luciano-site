@@ -116,6 +116,9 @@
     .time-refR {
         margin-left: 15px;
     }
+    .lineHight li {
+        line-height: 15px;
+    }
     .line-efect {
         
     }
@@ -166,5 +169,9 @@
         & div>p {
             padding: 8px;
         }
+    }
+    #redes {
+        width: 90%;
+        
     }
 }
