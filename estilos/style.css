@@ -1,18 +1,14 @@
 /* https://pt.wix.com/website-template/view/html/1885?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%3Fcriteria%3DPortf%25C3%25B3lio%2Bde%2Bdesenvolvedor%2528a%2529%2Bweb&tpClick=view_button&esi=1a0f037b-6d9d-4ec8-8aaa-ce95d6026323 */
 
 @import url("./nomalize.css");
-/* @font-face {
-    font-family: "Leckerli";
-    src: url("../Fonts/LeckerliOne-Regular.ttf");
-} */
+
 @font-face {
     font-family: "one";
     src: url(../Fonts/LeckerliOne-Regular.ttf);
 }
 @font-face {
     font-family: "wix-display";
-    src: url(../Fonts/Wix_Madefor_Display/);
-    /* src: url(./../Fonts/WixMadeforDisplay-VariableFont_wght.ttf); */
+    src: url(../Fonts/WixMadeforDisplay-VariableFont_wght.ttf);
 }
 :root{
     --cor-principal: #a5acb8;
@@ -46,6 +42,10 @@ main{
         font-weight: 600;
         text-shadow: 2px 2px 3px rgba(31, 23, 23, 0.381);
     }
+    & strong {
+        color: #00D646;
+        font-family: inherit;
+    }
 }
 #apresentacao{
     display: flex;
@@ -73,13 +73,12 @@ main{
     margin: auto;
     text-align: center;
     font-size: 2em;
-    color: white;
     padding: 10px;
     #sobre-span{
         color: #00D646;
     }
     & div:first-child{
-        color: white;
+        color: rgba(255, 255, 255, 0.719);
         font-size: 0.5em;
         font-weight: 400;
     }
@@ -92,7 +91,9 @@ main{
         margin: auto;
         line-height: 30px;
         & p {
-            font-family: 'wix-display', serif;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.566);
         }
     }
     & div:last-child {
@@ -264,12 +265,14 @@ main{
         list-style: none;
         line-height: 25px;
         & a {
+            padding: 5px;
             color: white;
-            text-decoration: none;
+            text-decoration: #00D646 underline;
+            text-underline-offset: 3px;
             /* font-family: 'Times New Roman', Times, serif; */
             &:hover {
                 background-color: rgba(60, 58, 58, 0.493);
-                border-radius: 5px;
+                border-radius: 2px;
                 transition: .5s;
             }
         }
@@ -283,11 +286,14 @@ main{
     text-align: left;
     margin-left: 55px;
     & li {
+        & a {
 
+        }
     }
 }
 .projects {
     height: 160px;
+    max-height: 260px;
 }
 #docontato {
     background-color: #333B50;
