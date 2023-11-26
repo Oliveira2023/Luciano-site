@@ -291,6 +291,9 @@ main{
         }
     }
 }
+#eng-soft {
+    margin-top: 20px;
+}
 .projects {
     height: 160px;
 }
