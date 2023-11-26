@@ -100,6 +100,9 @@
             
         }
     }
+    .projects {
+        height: 180px;
+    }
     .timeline {
         width: 99%;
     }
@@ -121,6 +124,9 @@
             flex: 3;
         }
     
+    }
+    .comp-iqqj6loz {
+        height: 180px;
     }
     #docontato {
         background-color: #333b509e;

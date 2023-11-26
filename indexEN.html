@@ -4,50 +4,316 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <title>Luciano</title>
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/mobile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
+    
 </head>
-<body>
+<body id="body">
     <header>
         
-        <span id="burger" onclick="menuClick()" class="material-symbols-outlined">menu</span>
-        <p>Luciano Oliveira</p>
-        <span class="EN" id="lang">EN</span>
-        
-        <menu id="menu-principal">
-             <ul>
-                <li><a href="biography.html">Biography</a></li>
-                <li><a href="philosophy.html">Philosophy</a></li>
-                <li><a href="playEng.html">Play</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <span id="burguer" onclick="menuClick()" class="material-symbols-outlined">menu</span>
+        <span><img src="/favicon-32x32.png" alt="logo do desenvolvedor"></span>
+        <menu id="menu-links">
+             <ul id="menu-mobile">
+                <li class="menuli" id="home"><a href="#body">Home</a></li>
+                <li class="menuli"><a href="#habilidades">PROFISSIONAL</a></li>
+                <li class="menuli"><a href="#experiencia">EXPERIÊNCIAS</a></li>
+                <!-- <li><a href="#">PORTIFÓLIO</a></li> -->
+                <li class="menuli"><a href="#docontato">CONTATO</a></li>
             </ul>
         </menu>
-        
+        <span id="lang" class="EN">EN</span>
     </header>
     
-    <div id="divrosto">
-        <img src="imagens/rosto-geral.jpg" id="img-principal" alt="foto de capa de Luciano">
-    </div>
-    
     <main>
-        <h1>Welcome!</h1>
-        <p>
-            Hello, this is my page, on this page I want to tell you a little about myself.
-        </p>
-        <p>
-            This was my first project as a Front-End developer, and a small demonstration of what I learned.
-        </p>
+        <h1></h1>
+        <div id="apresentacao">
+            <p>
+                I am <br><strong> Luciano Oliveira </strong><br>
+                <span id="dev">Software Engineer</span>
+            </p>
+            <div id="img-rosto">
+                <img src="./imagens/rosto-geral.jpg" alt="eu">
+            </div> 
+        </div>
+        
+        
     </main>
-    
-    <footer>
-            <div>
-                <a id="github" target="_blank" href="https://github.com/Oliveira2023">Github</a>
-                <a target="_blank" href="https://www.linkedin.com/in/luciano-oliveira-87a17682/">Linkedin</a>
+    <section id="sobre">
+        <div><h1>ABOUT <span id="sobre-span">...</span></h1></div>
+        <div><p>Born and raised in Minas Gerais until the age of 18, with a childhood and adolescence in a small town. At 18 I had my first experience of a big city, I lived for almost a year in Campinas in the interior of São Paulo, working as a bartender at the Conceição snack bar, where I sold the best 'coxinha' I've ever eaten; I returned home, but then I already missed the buildings and the atmosphere of the big city. I went back!. I went to the city of Americana, and soon after I came to São Paulo, where I live to this day.</p>
+            
+            
+            <p>Here, I worked for a few years at a baby stroller importer for 3 years, and then another 17 at Multfoco, an importer of optical products, where I grew up and specialized professionally as a technician in equipment maintenance. I worked for another 5 years in the optics industry as a technology representative in lens production and lens sales. I specialized in electronics at 27 years old. At 37, I wanted to go to college in the IT field, but after 6 months I gave up, seeing that the degree wouldn't give me enough knowledge to enter a new profession as I wanted. So I moved on with my life, with my work, many trips across the country and some to Spain..</p>
+            
+            
+            <p>At 47 things changed a little, and now writing this article, I realized that my life goes in cycles every 10 years that change something... now determined to follow a new career, but, I confess that I had a lot of difficulty at the beginning , this area is an ocean of information that it is impossible to learn everything, I realized this and stopped wanting to know everything, it would take many lives and I don't know if a human being would be capable.</p>
+            
+            
+            <p>So since mid-2022, I started my training in software engineering and other courses related to Front End development.</p>
+            
+            
+            <p>Well, that was a little and summarized the story of my life. Thank you for your attention.</p>
+        </div>
+        <div id="botao"><a href="Curriculo_Luciano_Oliveira_1023.pdf" target="_blank"><button>CURRICULUM</button></a></div>
+        
+    </section>
+    <section id="habilidades">
+        <h1>PROFESSIONAL</h1>
+        <P>My developing knowledge</P>
+        <div class="tec" >
+            <p>HTML</p>
+            <div class="barra">
+                <div id="html-tec"></div>
+                <p>85%</p>
             </div>
-        <p>Developed by @liveira</p>
-        <p>(11) 96359-1532</p>
-    </footer>
+        </div>
+        <div class="tec">
+            <p>CSS</p>
+            <div class="barra">
+                <div id="css-tec"></div>
+                <p>75%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p id="js">JS</p>
+            <div class="barra">
+                <div id="js-tec"></div>
+                <p>65%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p>SQL</p>
+            <div class="barra">
+                <div id="mysql-tec"></div>
+                <p>35%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p>React</p>
+            <div class="barra">
+                <div id="react-tec"></div>
+                <p>15%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p>Node</p>
+            <div class="barra">
+                <div id="node-tec"></div>
+                <p>10%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p>PHP</p>
+            <div class="barra">
+                <div id="php-tec"></div>
+                <p>5%</p>
+            </div>
+        </div>
+
+        <div class="tec">
+            <p>Python</p>
+            <div class="barra">
+                <div id="python-tec"></div>
+                <p>5%</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="experiencia">
+        <h1><span class="exp-hist">EXPERIENCES</span><span class="exp-hist" >CHRONOLOGY</span></h1>
+        <div class="timeline timeball">
+            <div class="time-refL">
+                <p>Completed projects</p>
+            </div>
+            <svg class="svg-ball" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 200 200" role="presentation" aria-hidden="true">
+            <g>
+                <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
+            </g>
+            </svg>
+            <div class="time-refR">Jul-2023-DeC</div>
+        </div>
+        <div class="timeline">
+            <ul class="time-refL projects">
+
+                <li><a href="https://vgr-veiculos.web.app/" target="_blank">*VGR veículos</a></li>
+                <li><a href="https://github.com/Oliveira2023/Saboroso" target="_blank">Saboroso</a></li>
+                <li><a id="freeCodeCamp-form" href="https://oliveira2023.github.io/formFreeCodeCamp/" target="_blank">Form FCC</a></li>
+                <li><a href="https://oliveira2023.github.io/landing-page/" target="_blank">*Luciano Page</a></li>
+            </ul>
+            <div id="comp-iqqj6loz" class="comp-iqqj6loz aVng1S wixui-horizontal-line" style="visibility: inherit;" data-angle="90" data-angle-style-location="style" data-screen-in-hide="done"></div>
+            <ul class="time-refR cronologia">
+                <br>
+                <li>3º college semester</li>
+                <li id="react-cfb">Start React - <a href="">CFB</a></li>
+                <li id="js-hcode">Conclusion JavaScript -<a href="">Hcode</a></li>
+            </ul>
+        </div>
+        <div class="timeline timeball">
+            <div class="time-refL">
+                <p></p>
+            </div>
+            <svg class="svg-ball" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 200 200" role="presentation" aria-hidden="true">
+            <g>
+                <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
+            </g>
+            </svg>
+            <div class="time-refR">Jan-2023-Jun</div>
+        </div>
+        <div class="timeline">
+            <ul class="time-refL projects">
+                
+                <li><a href="https://github.com/Oliveira2023/NetBeansProjects/tree/main/ProjetoRobo3" target="_blank">Robo-java</a></li>
+                <li><a href="https://oliveira2023.github.io/Projeto-Cordel/" target="_blank">Cordel</a></li>
+                <li><a href="https://github.com/Oliveira2023/Hcode-projeto-usuarios" target="_blank">Project usuários</a></li>
+                <li><a href="https://oliveira2023.github.io/projeto-social/" target="_blank">Project Social</a></li>
+                <li><a href="https://github.com/Oliveira2023/dropboxClone" target="_blank">Drobox Clone</a></li>
+            </ul>
+            <div id="comp-iqqj6loz" class="comp-iqqj6loz aVng1S wixui-horizontal-line" style="visibility: inherit;" data-angle="90" data-angle-style-location="style" data-screen-in-hide="done"></div>
+            <ul class="time-refR cronologia">
+                <br>
+                <li>2º college semester</li>
+                <li>Java introduction</li>
+                <li>JavaScript - Curso em vídeo</li>
+                <li>Github</li>
+            </ul>
+        </div>
+        <div class="timeline timeball">
+            <div class="time-refL">
+                <p></p>
+            </div>
+            <svg class="svg-ball" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 200 200" role="presentation" aria-hidden="true">
+            <g>
+                <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
+            </g>
+            </svg>
+            <div class="time-refR">Jun-2022-Dec</div>
+        </div>
+        <div class="timeline">
+            <ul class="time-refL projects">
+                
+                <li><a href="https://github.com/Oliveira2023/Primeiros-passos" target="_blank">First steps</a></li>
+                <li><a href="https://github.com/Oliveira2023/Hcode-projeto-usuarios" target="_blank">Project Users</a></li>
+                <li><a href="" target="_blank">Calculator JS</a></li>
+            </ul>
+            <div id="comp-iqqj6loz" class="comp-iqqj6loz aVng1S wixui-horizontal-line" style="visibility: inherit;" data-angle="90" data-angle-style-location="style" data-screen-in-hide="done"></div>
+            <ul class="time-refR cronologia">
+                <br>
+                <li>Start of Software Engineering</li>
+                <li>Html-CSS - curso em vídeo</li>
+                <li>Start JavaScript course - <a href="">Hcode</a></li>
+                <li>Certification JS - <a href="">FCC</a></li>
+            </ul>
+        </div>
+        <div class="timeline timeball">
+            <div class="time-refL">
+                <p>Know-how</p>
+            </div>
+            <svg class="svg-ball" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 200 200" role="presentation" aria-hidden="true">
+            <g>
+                <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
+            </g>
+            </svg>
+            <div class="time-refR"> 2001-2022</div>
+        </div>
+        <div class="timeline">
+            <ul class="time-refL projects lineHight">
+                <li>Own optics</li>
+                <li>Business Developer -Brasil</li>
+                <li>Technical Supervisor</li>
+                <li>Maintenance technician</li>
+                <li>Knowledge of the entire ophthalmic lens production process</li>
+            </ul>
+            <div id="comp-iqqj6loz" class="comp-iqqj6loz aVng1S wixui-horizontal-line" style="visibility: inherit;" data-angle="90" data-angle-style-location="style" data-screen-in-hide="done"></div>
+
+            <ul class="time-refR cronologia">
+                <br>
+                <li>21 years of experience in the optical sector</li>
+                <li>Electronics technician</li>
+                <li>Optical technician</li>
+                <li>Entrepreneur</li>
+            </ul>
+        </div>
+        <div class="timeline timeball">
+            <div class="time-refL">
+                <p></p>
+            </div>
+            <svg class="svg-ball" preserveAspectRatio="xMidYMid meet" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 200 200" role="presentation" aria-hidden="true">
+            <g>
+                <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
+            </g>
+            </svg>
+            <div class="time-refR"></div>
+        </div>
+    </section>
+    <section id="docontato">
+        <div id="contato">
+            <div>
+                <h2>Contact</h2>
+                <p>Get in touch, tell me a little more about your project, or simply talk to me.</p>
+                <p>Want to talk to me?</p>
+                <p>Send a message!</p>
+                
+            </div>
+            <form action="https://api.staticforms.xyz/submit" method="post" autocomplete="on">
+                <div>
+                    <input type="hidden" name="accessKey" value="6ab09167-3808-4891-ae0c-80a3e0d69569">
+                    <input type="hidden" name="subject" value="Mensagem do formulario do meu site">
+                    <input type="hidden" name="redirectTo" value="https://oliveira2023.github.io/Luciano-site#docontato">
+                </div>
+                <div>
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>  
+                <div>
+                    <input type="tel" name="phone" placeholder="Telephone" required>
+                </div>
+                <div>
+                <textarea rows="6" name="message" placeholder="Type your message here"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+                
+            </form>
+        </div>
+        <div id="email">
+            <p>Luciano.oliveira96@yahoo.com.br</p>
+                <p>(11) 96359-1532</p>
+        </div>
+        <div id="redes">
+            <a id="github" target="_blank" href="https://github.com/Oliveira2023"><img src="./imagens/github150B.png" alt="icone do github"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/luciano-oliveira-87a17682/"><img src="./imagens/linkedin150.png" alt="icone do linkedin"></a>
+            <div>
+                <a href="https://www.flaticon.com/br/icones-gratis/linkedin" title="linkedin ícones">icons created by riajulislam - Flaticon</a>
+            </div>
+        </div>
+    </section>
+        <footer> 
+            <div><img src="favicon-32x32.png" alt=" imagem logo"></div>
+            <div id="dev">
+                <p>Developed by @liveira2023</p>
+                <p>(11) 96359-1532</p>
+            </div> 
+            <div></div>
+        </footer>
    <script src="index.js"></script> 
+  </script>
 </body>
 </html>
+
