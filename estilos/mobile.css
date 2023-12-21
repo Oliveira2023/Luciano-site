@@ -94,14 +94,6 @@
     }
     .time-refL {
         margin-right: 15px;
-        /* background-color: rgb(93, 93, 47); */
-        & p {
-            /* background-color: aquamarine; */
-            
-        }
-    }
-    .projects {
-        /* height: 180px; */
     }
     .timeline {
         width: 99%;
