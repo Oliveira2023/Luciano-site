@@ -8,8 +8,10 @@ header {
     justify-content: space-around;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
     position: fixed;
+    top: 0;
     width: 100%;
     height: 45px;
+    
 }
 #menu-links {
     padding: 10px;
@@ -29,7 +31,7 @@ header {
 }
 #menu-links ul li a {
     text-decoration: none;
-    
+    /* font-family: wix, sans-serif; */
     color: rgba(255, 255, 255, 0.566);
     font-size: 0.8em;
     font-weight: 200;
