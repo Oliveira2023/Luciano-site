@@ -4,9 +4,6 @@ let btnSend = document.querySelector('#send')
 const menu = document.querySelector('#menu-mobile')
 let menuli = document.querySelectorAll('.menuli')
 const body = document.querySelector('body')
-let burger = document.querySelector('#burguer')
-
-
 
 menuli.forEach(element => {
     if (window.innerWidth <= 600) {
@@ -18,8 +15,6 @@ menuli.forEach(element => {
         menu.style.display = "flex"
     }
 })
-// console.log((burger.style.display === "none")? "oculto" : "mostrando")
-console.log(menu.style.display)
 let options= {
     root: null,
     rootMargin: '0px',
