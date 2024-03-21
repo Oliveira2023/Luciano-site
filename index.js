@@ -1,22 +1,25 @@
 let menuEl = document.getElementById("menu-principal")
 let lang = document.querySelector("#lang")
-let galeryBoton = document.getElementById("galeryboton")
-let baloes = document.querySelector('#baloes')
-let vale = document.querySelector('#vale')
-let rio = document.querySelector('#rio')
-let cassete = document.querySelector('#cassete')
 let btnSend = document.querySelector('#send')
-
 const menu = document.querySelector('#menu-mobile')
 let menuli = document.querySelectorAll('.menuli')
 const body = document.querySelector('body')
+let burger = document.querySelector('#burguer')
+
+
 
 menuli.forEach(element => {
+    if (window.innerWidth <= 600) {
     element.addEventListener('click', () => {
         menu.style.display = "none"
-    })
+    }
+    )
+    }else {
+        menu.style.display = "flex"
+    }
 })
-
+// console.log((burger.style.display === "none")? "oculto" : "mostrando")
+console.log(menu.style.display)
 let options= {
     root: null,
     rootMargin: '0px',
