@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Portifólio</title>
     <link rel="stylesheet" href="estilos/portifolio.css">
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="./estilos/mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
-        <h1>Portifolio</h1>
-        <h2>Projetos em PHP</h2>
+        
+        <span id="burguer" onclick="menuClick()" class="material-symbols-outlined">menu</span>
+        <span><img src="/favicon-32x32.png" alt="logo do desenvolvedor"></span>
+        <menu id="menu-links">
+             <ul id="menu-mobile">
+                <li class="menuli" id="home"><a href="index.html#body">Home</a></li>
+                <li class="menuli"><a href="index.html#habilidades">PROFISSIONAL</a></li>
+                <li class="menuli"><a href="index.html#experiencia">EXPERIÊNCIAS</a></li>
+                <!-- <li><a href="#">PORTIFÓLIO</a></li> -->
+                <li class="menuli"><a href="index.html#docontato">CONTATO</a></li>
+            </ul>
+        </menu>
+        <span id="lang" class="PT">PT</span>
     </header>
-    <main class="frame3">
-        <div>
-            <!-- <h2>Caixa Eletrônico</h2> -->
-            <img src="./imagens/caixaEletronico.png" alt="">
-        </div>
-        <div>
-            <img src="./imagens/calculadoraTempoSegundos.png" alt="">
-        </div>
-        <div>
-            <img src="./imagens/reajustePreço.png" alt="">
+    <h2 class="title" id="title1">Projetos em PHP</h2>
+    <main>
+        <div class="frame3 container">
+            <div>
+                <!-- <h2>Caixa Eletrônico</h2> -->
+                <img src="./imagens/caixaEletronico.png" alt="">
+            </div>
+            <div>
+                <img src="./imagens/calculadoraTempoSegundos.png" alt="">
+            </div>
+            <div>
+                <img src="./imagens/reajustePreço.png" alt="">
+            </div>
         </div>
     </main>
-    <h2>Projetos em Java</h2>
-    <main class="frame2">
+    <h2 class="title">Projetos em Java</h2>
+    <main>
+        <div class="frame2 container">
+            <div>
+                <img src="./imagens/simuladorRobo.png" alt="">
+            </div>
+            <div>
+                <img src="./imagens/BancoDeDados.png" alt="">
+            </div>
         <div>
-            <img src="./imagens/simuladorRobo.png" alt="">
-        </div>
-        <div>
-            <img src="./imagens/BancoDeDados.png" alt="">
-        </div>
     </main>
     <main class="frame1">
         <div>
@@ -38,18 +57,58 @@
             <img src="./imagens/graficos.png" alt="">
         </div>
     </main>
-    <h2>Projetos em HTML/CSS</h2>
+    <h2 class="title">Projetos em HTML/CSS e Javascript</h2>
     <main>
         <div>
-            <img src="" alt="">
+            <img src="./imagens/vgr.png" alt="" style="border: 3px solid black;">
         </div>
         <div>
-            <img src="" alt="">
+            <img src="./imagens/orlandoCity.png" alt="">
         </div>
         <div>
             <img src="" alt="">
         </div>
     </main>
-    <h2>Projetos em Javascript</h2>
+    <h2>Projetos em Javascript, EJS e MySQL</h2>
+    <main>
+        <div>
+            <img src="./imagens/saborosoSQL.png" alt="">
+        </div>
+        <div>
+            <img src="./imagens/saborosoADM.png" alt="">
+        </div>
+    </main>
+    <h2 class="title">Outros Projetos/exercícios</h2>
+    <main>
+        <div>
+            <ul>
+                <li class="projectlist">Whatsapp clone (web) -JS</li>
+                <li class="projectlist">Calculadora Windows - JS</li>
+                <li class="projectlist">Dropbox-Clone - JS</li>
+                <li class="projectlist">Dia ou noite - JS</li>
+                <li class="projectlist">Calculadora de IMC - JS | PHP | C</li>
+                <li class="projectlist">Salario liquido - C </li>
+                <li class="projectlist">Fatorial - JS | C</li>
+                <li class="projectlist">Fibonacci - JS | C</li>
+                <li class="projectlist">Funções - JS | C | PYTHON</li>
+                <li class="projectlist">Estruturas de repetição - JS | PHP | C | GO | PYTHON | JAVA | KOTLIN </li>
+                <li class="projectlist">Estruturas de decisão - JS | PHP | C | GO | PYTHON | JAVA | KOTLIN</li>
+                <li class="projectlist">Variáveis, constantes, arrays - JS | PHP | C | PYTHON | JAVA</li>
+                <li class="projectlist">Recursividade - JS | C</li>
+                <li class="projectlist">Matrizes - JS | C</li>
+                <li class="projectlist">Operadores aritméticos - JS | C | PYTHON | JAVA</li>
+                <li class="projectlist">Operadores lógicos - JS | C | PYTHON | JAVA</li>
+                <li class="projectlist">e mais...</li>
+            </ul>
+        </div>
+    </main>
+    <main>
+        <div id="redes">
+            <a id="github" target="_blank" href="https://github.com/Oliveira2023"><img src="./imagens/github150B.png" alt="icone do github"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/luciano-oliveira-87a17682/"><img src="./imagens/linkedin150.png" alt="icone do linkedin"></a>
+
+        </div>
+    </main>
+    <script src="index.js"></script>
 </body>
 </html>

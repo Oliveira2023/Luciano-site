@@ -1,31 +1,78 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.title {
+    text-align: center;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+#title1 {
+    margin-top: 50px;
+    font-size: 1.5rem;
 }
 main {
     background-image: linear-gradient(180deg, #372991, #15142b);
     padding: 20px;
     display: grid;
 }
+.container {
+    display: grid;
+}
 .frame3 {
-    
+    width: 90%;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    margin: auto;
 }
 .frame2 {
     grid-template-columns: 1fr 1fr;
-
+    width: 90%;
+    margin: auto;
 }
 .frame1 {
     grid-template-columns: 1fr;
 }
 div {
-    /* width: 250px; */
-    width: 80%;
+    width: 90%;
     border: 1px solid white;
     padding: 10px;
+    margin: auto;
 }
 img {
     width: 100%;
+}
+.projectlist {
+    color: white;
+    margin-left: 1rem;
+    font-weight: 400;
+    font-size: large;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+#redes {
+    border: none;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    & a {
+        text-decoration: none;
+        margin: 0 15px;
+        height: 30px;
+        & img {
+            width: 30px;
+        }
+    }
+    & div {
+        font-size: xx-small;
+        margin: 5px;
+        & a {
+            color: white;
+        }
+    }
 }

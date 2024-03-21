@@ -96,7 +96,7 @@ main{
             color: rgba(255, 255, 255, 0.566);
         }
     }
-    & div:last-child {
+    & div#botao {
         font-size: 0.5em;
         padding: 5px;
         & button {
@@ -104,7 +104,7 @@ main{
             border: 1px solid #00D646;
             color: white;
             padding: 15px 30px;
-            margin: 50px 0;
+            margin: 25px 0;
             &:hover {
                 background-color: #00D646;
             }
@@ -151,43 +151,48 @@ main{
     background-color: #00D646;
     height: 12px;
     border-radius: 2px;
-
     animation-name: progress;
     animation-duration: 3.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
-#html-tec {
-    width: 85%;
-}
 @keyframes progress {
     from {
         width: 0;
     }
 }
-
+#html-tec {
+    width: 85%;
+}
 #css-tec {
     width: 75%;
-
-
 }
 #js-tec {
     width: 65%;
 }
-#react-tec {
-    width: 15%;
-}
-#node-tec {
-    width: 10%;
+#sql-tec {
+    width: 45%;
 }
 #mysql-tec {
+    width: 45%;
+}
+#java-tec {
     width: 35%;
 }
-#sql-tec {
-    width: 10%;
+#react-tec {
+    width: 25%;
+}
+#next-tec {
+    width: 25%;
+}
+#node-tec {
+    width: 30%;
 }
 #php-tec {
+    width: 15%;
+}
+#r-native-tec {
     width: 5%;
 }
 #python-tec {
